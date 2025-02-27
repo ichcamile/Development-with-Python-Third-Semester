@@ -6,3 +6,4 @@ eixo_y = [300, 99, 153, 359]
 grafico = px.line(x=eixo_x, y=eixo_y, title="Venda A.I com Daniel", height=500, width= 900)
 
 grafico.show()
+

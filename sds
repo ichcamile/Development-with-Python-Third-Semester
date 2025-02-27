@@ -1,0 +1,11 @@
+import plotly.express as px
+
+# Dados fictícios
+nomes = ["Ana", "Bruno", "Carlos", "Daniela", "Eduardo", "Fernanda"]
+vendas = [150, 230, 180, 290, 310, 275]
+
+# Criando o gráfico de barras
+grafico = px.bar(x=nomes, y=vendas, title="Vendas por Vendedor", labels={'x': "Vendedores", 'y': "Total de Vendas"})
+
+# Exibir o gráfico
+grafico.show()
