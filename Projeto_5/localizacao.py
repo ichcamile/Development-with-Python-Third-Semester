@@ -11,7 +11,7 @@ def gerar_JSON(dic, arquivo):
 
 geolocaliza = Nominatim(user_agent = "Bora-Ir")
 
-dicionario = ler_arquivo("endereco.json")
+dicionario = ler_arquivo("/content/sample_data/endereco.json")
 
 lista = dicionario["endereco"]
 
@@ -21,4 +21,4 @@ saida = {
     "coordenadas": (location.latitude, location.longitude)
 }
 
-gerar_JSON(saida, "arquivo_saida.json")
+gerar_JSON(saida, "/content/sample_data/arquivo_saida.json")
